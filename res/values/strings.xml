@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Color Tone</string>
+    <string-array name="classifier_names">
+        <item>XKCD color survey</item>
+        <item>X11</item>
+        <item>Resene</item>
+    </string-array>
+    <string-array name="classifier_ids">
+        <item>xkcd.dat</item>
+        <item>x11.dat</item>
+        <item>resene.dat</item>
+    </string-array>
+    <string-array name="estimator_names">
+        <item>Single pixel</item>
+        <item>Average from central area</item>
+    </string-array>
+    <string-array name="estimator_ids">
+        <item>pl.edu.uj.tcs.mib.colortone.SimpleEstimator</item>
+        <item>pl.edu.uj.tcs.mib.colortone.FlatRectEstimator</item>
+    </string-array>
+</resources>

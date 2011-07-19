@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:defaultValue="true" android:key="crosshair_enabled" android:summaryOff="Crosshair is disabled" android:summaryOn="Crosshair is enabled" android:title="Crosshair"></CheckBoxPreference>
+    <CheckBoxPreference android:defaultValue="true" android:key="show_rgb" android:summaryOff="RGB display is now disabled" android:title="RGB values box" android:summaryOn="RGB display is now enabled"></CheckBoxPreference>
+    <CheckBoxPreference android:title="HSV box" android:defaultValue="true" android:key="show_hsv" android:summaryOn="HSV (Hue/Saturation/Value) display is now enabled" android:summaryOff="HSV (Hue/Saturation/Value) display is now disabled"></CheckBoxPreference>
+    <ListPreference android:entryValues="@array/estimator_ids" android:entries="@array/estimator_names" android:title="Estimator" android:key="estimator" android:summary="Select a method for obtaining color from image" android:defaultValue="pl.edu.uj.tcs.mib.colortone.FlatRectEstimator"></ListPreference>
+    <ListPreference android:title="Classifier" android:key="classifier" android:summary="Select a method for color naming" android:entries="@array/classifier_names" android:entryValues="@array/classifier_ids" android:defaultValue="xkcd.dat"></ListPreference>
+    <ListPreference android:title="White balance" android:key="white_balance" android:defaultValue="auto"></ListPreference>
+</PreferenceScreen>

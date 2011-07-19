@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:orientation="vertical">
+    <FrameLayout android:id="@+id/frameLayout1" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <pl.edu.uj.tcs.mib.colortone.Preview android:id="@+id/m_preview" android:layout_height="fill_parent" android:layout_width="fill_parent"></pl.edu.uj.tcs.mib.colortone.Preview>
+        <LinearLayout android:id="@+id/linearLayout3" android:layout_height="fill_parent" android:layout_width="fill_parent" android:orientation="vertical">
+            <RelativeLayout android:id="@+id/relativeLayout1" android:layout_height="match_parent" android:layout_width="fill_parent" android:layout_weight="10">
+                <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_marginLeft="20dip" android:layout_marginTop="30dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="@color/InfoBackground">
+                    <SurfaceView android:id="@+id/color_surface" android:layout_height="60dip" android:layout_width="60dip"></SurfaceView>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/color_name" android:layout_gravity="center_vertical" android:layout_marginLeft="10dip" android:textSize="22dip" android:padding="10dip" android:text="No reading"></TextView>
+                </LinearLayout>
+                <TextView android:id="@+id/debugtv" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginBottom="10dip" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true" android:layout_marginLeft="10dip" android:padding="10dip"></TextView>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_marginLeft="20dip" android:layout_marginBottom="30dip" android:id="@+id/rgbinfo" android:textSize="15dip" android:background="@color/InfoBackground" android:padding="10dip" android:text="No reading"></TextView>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/hsvinfo" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_marginBottom="30dip" android:layout_marginRight="40dip" android:textSize="15dip" android:background="@color/InfoBackground" android:padding="10dip" android:ellipsize="middle" android:text="No reading"></TextView>
+                <ZoomControls android:layout_width="wrap_content" android:id="@+id/zoomControls1" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_marginRight="10dip"></ZoomControls>
+            </RelativeLayout>
+            <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:layout_weight="1" android:layout_width="fill_parent" android:layout_gravity="bottom">
+                <ImageButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lock_button" android:background="@color/InfoBackground" android:layout_weight="0" android:src="@drawable/unlock" android:padding="10dip" android:layout_marginLeft="20dip" android:layout_marginBottom="5dip"></ImageButton>
+                <LinearLayout android:layout_height="match_parent" android:layout_width="wrap_content" android:id="@+id/linearLayout4" android:layout_weight="1">
+                </LinearLayout>
+                <ImageButton android:layout_height="wrap_content" android:id="@+id/tts_button" android:layout_width="wrap_content" android:background="@color/InfoBackground" android:padding="10dip" android:src="@drawable/tts" android:layout_marginRight="10dip"></ImageButton>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/imageView1" android:layout_gravity="center" android:src="@drawable/crosshair"></ImageView>
+
+    </FrameLayout>
+</LinearLayout>

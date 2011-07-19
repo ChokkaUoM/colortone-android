@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent" android:orientation="horizontal" android:layout_height="fill_parent">
+    <LinearLayout android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:background="@color/InfoBackground">
+        <ImageButton android:layout_weight="0" android:src="@drawable/trash" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/ar_trash_button"></ImageButton>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ar_rgb"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ar_hsv"></TextView>
+        <TextView android:layout_width="wrap_content" android:text="#??????" android:layout_height="wrap_content" android:id="@+id/ar_html"></TextView>
+        <TextView android:layout_width="wrap_content" android:text="[NO TIMESTAMP]" android:layout_height="wrap_content" android:id="@+id/ar_timestamp"></TextView>
+        <SurfaceView android:id="@+id/ar_color_surface" android:layout_height="fill_parent" android:layout_width="fill_parent"></SurfaceView>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout2" android:background="@color/InfoBackground" android:layout_height="fill_parent" android:layout_width="fill_parent" android:orientation="vertical">
+        <TextView android:text="[UNKNOWN]" android:layout_marginTop="10dip" android:id="@+id/ar_name" android:layout_height="40dip" android:layout_marginLeft="10dip" android:layout_width="wrap_content" android:layout_gravity="right" android:textSize="22dip" android:layout_marginRight="25dip"></TextView>
+        <Gallery android:layout_width="fill_parent" android:spacing="20dip" android:id="@+id/gallery" android:layout_height="wrap_content"></Gallery>
+    </LinearLayout>
+</LinearLayout>
