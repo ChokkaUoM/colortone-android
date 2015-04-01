@@ -1,0 +1,1 @@
+ColorTone app picks colors from camera capture providing an English name and RGB/HSV/HTML notation values.
